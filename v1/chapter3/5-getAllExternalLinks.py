@@ -51,7 +51,8 @@ def followExternalOnly(startingSite):
     print("Random external link is: "+externalLink)
     followExternalOnly(externalLink)
             
-#Collects a list of all external URLs found on the site
+# Collects a list of all external URLs found on the site
+
 allExtLinks = set()
 allIntLinks = set()
 def getAllExternalLinks(siteUrl):

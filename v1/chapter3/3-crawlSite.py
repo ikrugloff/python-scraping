@@ -42,10 +42,11 @@ def getRandomExternalLink(startingPage):
                                   len(internalLinks)-1)])
     else:
         return externalLinks[random.randint(0, len(externalLinks)-1)]
-    
+
+
 def followExternalOnly(startingSite):
-    externalLink = getRandomExternalLink("http://oreilly.com")
-    print("Random external link is: "+externalLink)
+    externalLink = getRandomExternalLink("http://oreilly.com")  # Почему падает, если заменить на "startingSite"
+    print("Random external link is: " + externalLink)
     followExternalOnly(externalLink)
             
 followExternalOnly("http://oreilly.com")
